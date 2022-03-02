@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #282829;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1000;
+
+}
+
+header .logo{
+    color: #f5f5f5;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header ul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    margin-left:20px;
+}
+header ul li a{
+    padding: 3px 15px;
+    color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 20px;
+}
+header ul li a:hover, 
+header ul li a .active{
+    background: #f5f5f5;
+    color:#282829;
+}
+
+
+main .night-sky{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+main .roles::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main .night-sky img{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mountains {
+    z-index:10;
+}
+main .night-sky .text{
+    position: absolute;
+    color: #f5f5f5;
+    white-space: nowrap;
+    font-size:40px;
+    z-index: 1;
+}
+
+main .night-sky .btn{
+    text-decoration: none;
+    padding:8px 30px;
+    border-radius: 40px;
+    background: #f5f5f5;
+    color: #282829;
+    font-size:20px;
+    z-index: 9;
+    display: inline-block;
+    transform: translateY(100px);
+}
+
+
+.roles-section{
+    padding-top:30px;
+    z-index: 10;
+    display:flex;
+    flex-direction: column; 
+}
+
+.roles{
+   margin-bottom:10px;
+}
+.roles-section h1{
+    color:#f5f5f5;
+    font-size:35px;
+   font-weight: 600; 
+   text-align:center;
+   text-decoration: underline overline;
+   font-family: 'Nunito Sans', sans-serif;
+}
+.roles h2{
+    color: #b580c9;
+    font-size:35px;
+    margin-left:20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.roles img{
+    margin-left:45%;
+    margin-right:50%;
+    width:8%;
+}
+.roles h3{
+    color: #4a2d55;
+    font-size:25px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.action{
+    display: flex;
+}
+
+.action-1, .action-2, .action-3{
+    background:#b580c9;
+    margin-left: 20px;
+    margin-right: 20px;
+    width:700px;
+    height: 300px;
+    padding:30px;
+    margin-top :2%;
+    border-radius:20px;
+}
+.action-1 img, .action-2 img, .action-3 img{
+    width:20%;
+    margin-left:38%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.roles .role{
+    flex-direction: column;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-bottom:5%; 
+    padding:20px;
+    
+}
+.footer__content{
+    background-color: #4a2d55;
+    padding-left:20px; 
+    margin-top:0;
+    margin-bottom:-70px;
+    font-size:14px;
+    color:#f5f5f5;
+    
+}
+.footer__content a{
+    text-decoration:none;
+    color:#f5f5f5;
+    margin-left:20px;
+}
+.footer img{
+    width: 100%;
+    margin-top:0;
+    margin-bottom:-20px;
+}
+
+@media (max-width: 700px) {
+    .action{
+        flex-direction: column;
+    }
+    .action-1, .action-2, .action-3{
+        width:80%;
+        height: 30%;
+    }
+    main .night-sky .text{
+        font-size:20px;
+    }
+    .roles img{
+        width:20%;
+        margin-left:30%;}
+
+        main .night-sky .text{
+            top:250px;
+        }
+
+ }
